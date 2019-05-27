@@ -189,7 +189,65 @@
 	find ../../data/benchmark/ncbi_seq_wildmut/varibench/ *.fasta | xargs cat > varibench_fMoRF.fasta
 	find ../../data/benchmark/ncbi_seq_wildmut/swissvar/ *.fasta | xargs cat > swissvar_fMoRF.fasta
 	find ../../data/benchmark/ncbi_seq_wildmut/predictSNP/ *.fasta | xargs cat > predictSNP_fMoRF.fasta
-	cat humvar_fMoRF.fasta | grep ">" | wc -l
+	humvar.split0 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split1 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split2 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split3 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split4 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split5 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split6 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split7 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split8 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split9 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split10 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split11 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split12 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split13 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split14 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split15 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split16 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split17 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split18 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split19 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split20 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split21 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split22 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split23 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split24 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split25 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
 
 ### 5.4 Derived Predicted Disorder Feature (DPDF)
+##### IUPred2A
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar long > log/GetFeature_2_iupred2a_humvar_long.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar short > log/GetFeature_2_iupred2a_humvar_short.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/exovar_tool_scores.csv exovar long > log/GetFeature_2_iupred2a_exovar_long.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/exovar_tool_scores.csv exovar short > log/GetFeature_2_iupred2a_exovar_short.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/varibench_selected_tool_scores.csv varibench long > log/GetFeature_2_iupred2a_varibench_long.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/varibench_selected_tool_scores.csv varibench short > log/GetFeature_2_iupred2a_varibench_short.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar long > log/GetFeature_2_iupred2a_swissvar_long.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar short > log/GetFeature_2_iupred2a_swissvar_short.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP long > log/GetFeature_2_iupred2a_predictSNP_long.log &
+	​	nohup python GetFeature_2_iupred2a.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP short > log/GetFeature_2_iupred2a_predictSNP_short.log &
+##### Espritz
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/humvar_tool_scores.csv humvar X > log/GetFeature_2_espritz_derived_humvar_espritz_X.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/humvar_tool_scores.csv humvar N > log/GetFeature_2_espritz_derived_humvar_espritz_N.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/humvar_tool_scores.csv humvar D > log/GetFeature_2_espritz_derived_humvar_espritz_D.log &
+
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/exovar_tool_scores.csv exovar X > log/GetFeature_2_espritz_derived_exovar_espritz_X.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/exovar_tool_scores.csv exovar N > log/GetFeature_2_espritz_derived_exovar_espritz_N.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/exovar_tool_scores.csv exovar D > log/GetFeature_2_espritz_derived_exovar_espritz_D.log &
+
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/varibench_selected_tool_scores.csv varibench X > log/GetFeature_2_espritz_derived_varibench_espritz_X.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/varibench_selected_tool_scores.csv varibench N > log/GetFeature_2_espritz_derived_varibench_espritz_N.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/varibench_selected_tool_scores.csv varibench D > log/GetFeature_2_espritz_derived_varibench_espritz_D.log &
+
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar X > log/GetFeature_2_espritz_derived_varibench_espritz_X.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar N > log/GetFeature_2_espritz_derived_varibench_espritz_N.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar D > log/GetFeature_2_espritz_derived_varibench_espritz_D.log &
+
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP X > log/GetFeature_2_espritz_derived_predictSNP_espritz_X.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP N > log/GetFeature_2_espritz_derived_predictSNP_espritz_N.log &
+	​	nohup python GetFeature_2_espritz.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP D > log/GetFeature_2_espritz_derived_predictSNP_espritz_D.log &
+##### DisEmbl
+
 ### 5.5 Polyphen2 Consevation Features (PPH2)
