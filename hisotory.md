@@ -72,7 +72,7 @@
 	​	nohup python DisorderPredict_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar > log/DisorderPredict_disembl_swissvar.log &
 	​	nohup python DisorderPredict_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP > log/DisorderPredict_disembl_predictSNP.log &
 
-	
+## Molecular recoginition Region Feature(MoRF)
 
 ## PolyPhen2
 ### 1.Prepare the input files for polyhhen2 prediction
@@ -108,3 +108,12 @@
 
 ### 3.Mapping to benchmark dataset
 	​	python getPPH2Feature.py
+
+
+
+## Feature Combination
+### 1. Predictted Disorder Score (PDS)
+### 2. Disorder Promotion Feature (DPF)
+### 3. Molecular recoginition Region Feature (MoRF)
+### 4. Derived Predicted Disorder Feature (DPDF)
+### 5. Polyphen2 Consevation Features (PPH2)
