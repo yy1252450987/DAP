@@ -249,5 +249,24 @@
 	​	nohup python GetFeature_2_espritz.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP N > log/GetFeature_2_espritz_derived_predictSNP_espritz_N.log &
 	​	nohup python GetFeature_2_espritz.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP D > log/GetFeature_2_espritz_derived_predictSNP_espritz_D.log &
 ##### DisEmbl
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/humvar_tool_scores.csv humvar coils > derived_disembl_coils_humvar.log & #RESIDUE COILS REM465 HOTLOOPS
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/humvar_tool_scores.csv humvar rem465 > derived_disembl_rem65_humvar.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/humvar_tool_scores.csv humvar hotloops > derived_disembl_hotloops_humvar.log &
+
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/exovar_tool_scores.csv exovar coils > derived_disembl_coils_exovar.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/exovar_tool_scores.csv exovar rem465 > derived_disembl_rem65_exovar.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/exovar_tool_scores.csv exovar hotloops > derived_disembl_hotloops_exovar.log &
+
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/varibench_selected_tool_scores.csv varibench coils > derived_disembl_coils_varibench.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/varibench_selected_tool_scores.csv varibench rem465 > derived_disembl_rem65_varibench.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/varibench_selected_tool_scores.csv varibench hotloops > derived_disembl_hotloops_varibench.log &
+
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar coils > derived_disembl_coils_swissvar.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar rem465 > derived_disembl_rem65_swissvar.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar hotloops > derived_disembl_hotloops_swissvar.log &
+
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP coils > derived_disembl_coils_predictSNP.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP rem465 > derived_disembl_rem65_predictSNP.log &
+	​	nohup python GetFeature_2_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP hotloops > derived_disembl_hotloops_predictSNP.log &
 
 ### 5.5 Polyphen2 Consevation Features (PPH2)
