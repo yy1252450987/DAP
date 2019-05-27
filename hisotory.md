@@ -9,7 +9,7 @@
 	​	python WildSeq2MutSeq.py 
 
 ## 2. Disorder Prediction
-	### 2.1 IUPred2A
+### 2.1 IUPred2A
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar long > log/DisorderPredict_iupred2a_humvar_long.log &
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar short > log/DisorderPredict_iupred2a_humvar_short.log &
 	
