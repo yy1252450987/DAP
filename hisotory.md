@@ -183,5 +183,13 @@
 
 
 ### 5.3 Molecular recoginition Region Feature (MoRF)
+##### fMoRF webserver (http://biomine.cs.vcu.edu/servers/fMoRFpred/)
+	find ../../data/benchmark/ncbi_seq_wildmut/humvar/ *.fasta | xargs cat > humvar_fMoRF.fasta
+	find ../../data/benchmark/ncbi_seq_wildmut/exovar/ *.fasta | xargs cat > exovar_fMoRF.fasta
+	find ../../data/benchmark/ncbi_seq_wildmut/varibench/ *.fasta | xargs cat > varibench_fMoRF.fasta
+	find ../../data/benchmark/ncbi_seq_wildmut/swissvar/ *.fasta | xargs cat > swissvar_fMoRF.fasta
+	find ../../data/benchmark/ncbi_seq_wildmut/predictSNP/ *.fasta | xargs cat > predictSNP_fMoRF.fasta
+	cat humvar_fMoRF.fasta | grep ">" | wc -l
+
 ### 5.4 Derived Predicted Disorder Feature (DPDF)
 ### 5.5 Polyphen2 Consevation Features (PPH2)
