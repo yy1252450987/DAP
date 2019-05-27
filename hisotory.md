@@ -1,11 +1,11 @@
 ## 1. Sequence Process
-　### 1.1 Download fasta sequences from NCBI and Uniprot database
+### 1.1 Download fasta sequences from NCBI and Uniprot database
 	​	python DownloadNcbiSeq.py ../data/benchmark/humvar_tool_scores.csv humvar
  	​	python DownloadNcbiSeq.py ../data/benchmark/exovar_tool_scores.csv exovar 
  	​	python DownloadNcbiSeq.py ../data/benchmark/varibench_selected_tool_scores.csv varibench
  	​	python DownloadNcbiSeq.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar
  	​	python DownloadNcbiSeq.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP
-　### 1.2 Extract wild and mutate sequences from downloaded sequences
+### 1.2 Extract wild and mutate sequences from downloaded sequences
 	​	python WildSeq2MutSeq.py 
 
 ## 2. Disorder Prediction
