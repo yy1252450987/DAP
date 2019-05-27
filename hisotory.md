@@ -175,6 +175,13 @@
 
 
 ### 5.2 Disorder Promotion Feature (DPF)
+	​	nohup python GetFeature_PromoptResidue.py ../data/benchmark/humvar_tool_scores.csv humvar > log/GetFeature_PromoptResidue_humvar.log &
+	​	nohup python GetFeature_PromoptResidue.py ../data/benchmark/exovar_tool_scores.csv exovar > log/GetFeature_PromoptResidue_exovar.log &
+	​	nohup python GetFeature_PromoptResidue.py ../data/benchmark/varibench_selected_tool_scores.csv varibench > log/GetFeature_PromoptResidue_varibench.log &
+	​	nohup python GetFeature_PromoptResidue.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar > log/GetFeature_PromoptResidue_swissvar.log &
+	​	nohup python GetFeature_PromoptResidue.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP > log/GetFeature_PromoptResidue_predictSNP.log &
+
+
 ### 5.3 Molecular recoginition Region Feature (MoRF)
 ### 5.4 Derived Predicted Disorder Feature (DPDF)
 ### 5.5 Polyphen2 Consevation Features (PPH2)
