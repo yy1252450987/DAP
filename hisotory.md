@@ -272,22 +272,24 @@
 ### 5.5 Polyphen2 Consevation Features (PPH2)
 
 ## 6 Feature Evalutation & Comparison
+### 6.1 Select feature
 	​	python EvaluateFeatures.py ../data/benchmark/exovar_tool_scores.csv exovar
 	​	python EvaluateFeatures.py ../data/benchmark/humvar_tool_scores.csv humvar
 	​	python EvaluateFeatures.py ../data/benchmark/varibench_selected_tool_scores.csv varibench
 	​	python EvaluateFeatures.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar
 	​	python EvaluateFeatures.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP
-
+### 6.2 Compare the DAF and PPH2 features
 	​	nohup python PredictionComparison.py ../data/benchmark/humvar_tool_scores.csv humvar roc_auc > log/PredictionComparison_humvar.log &
 	​	nohup python PredictionComparison.py ../data/benchmark/exovar_tool_scores.csv exovar roc_auc > log/PredictionComparison_exovar.log &
 	​	nohup python PredictionComparison.py ../data/benchmark/varibench_selected_tool_scores.csv varibench roc_auc > log/PredictionComparison_varibench.log &
 	​	nohup python PredictionComparison.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar roc_auc > log/PredictionComparison_swissvar.log &
 	​	nohup python PredictionComparison.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP roc_auc > log/PredictionComparison_predictSNP.log &
 
-
+### 6.3 Extract prediction from other predictors
 	​	python PreDefinedPrediction.py ../data/benchmark/exovar_tool_scores.csv exovar
 	​	python PreDefinedPrediction.py ../data/benchmark/humvar_tool_scores.csv humvar
 	​	python PreDefinedPrediction.py ../data/benchmark/varibench_selected_tool_scores.csv varibench
 	​	python PreDefinedPrediction.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar
 	​	python PreDefinedPrediction.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP
-
+### 6.4 Train other datasets and validate on this dataset
+	​	nohup python PredictionComparison_train_others.py > log/PredictionComparison_train_others.log &
