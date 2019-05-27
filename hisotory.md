@@ -153,6 +153,27 @@
 
 ##### DisEmbl
 
+	​	nohup python GetFeature_disembl.py ../data/benchmark/humvar_tool_scores.csv humvar coils > log/GetFeature_disembl_coils_humvar.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/humvar_tool_scores.csv humvar rem465 > log/GetFeature_disembl_rem65_humvar.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/humvar_tool_scores.csv humvar hotloops > log/GetFeature_disembl_hotloops_humvar.log &
+
+	​	nohup python GetFeature_disembl.py ../data/benchmark/exovar_tool_scores.csv exovar coils > log/GetFeature_disembl_coils_exovar.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/exovar_tool_scores.csv exovar rem465 > log/GetFeature_disembl_rem65_exovar.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/exovar_tool_scores.csv exovar hotloops > log/GetFeature_disembl_hotloops_exovar.log &
+
+	​	nohup python GetFeature_disembl.py ../data/benchmark/varibench_selected_tool_scores.csv varibench coils > log/GetFeature_disembl_coils_varibench.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/varibench_selected_tool_scores.csv varibench rem465 > log/GetFeature_disembl_rem65_varibench.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/varibench_selected_tool_scores.csv varibench hotloops > log/GetFeature_disembl_hotloops_varibench.log &
+
+	​	nohup python GetFeature_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar coils > log/GetFeature_disembl_coils_swissvar.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar rem465 > log/GetFeature_disembl_rem65_swissvar.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar hotloops > log/GetFeature_disembl_hotloops_swissvar.log &
+
+	​	nohup python GetFeature_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP coils > log/GetFeature_disembl_coils_predictSNP.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP rem465 > log/GetFeature_disembl_rem65_predictSNP.log &
+	​	nohup python GetFeature_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP hotloops > log/GetFeature_disembl_hotloops_predictSNP.log &
+
+
 ### 5.2 Disorder Promotion Feature (DPF)
 ### 5.3 Molecular recoginition Region Feature (MoRF)
 ### 5.4 Derived Predicted Disorder Feature (DPDF)
