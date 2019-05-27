@@ -12,12 +12,16 @@
 ### 1. IUPred2A
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar long > log/DisorderPredict_iupred2a_humvar_long.log &
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar short > log/DisorderPredict_iupred2a_humvar_short.log &
+	
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/exovar_tool_scores.csv exovar long > log/DisorderPredict_iupred2a_exovar_long.log &
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/exovar_tool_scores.csv exovar short > log/DisorderPredict_iupred2a_exovar_short.log &
+	
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/varibench_selected_tool_scores.csv varibench long > log/DisorderPredict_iupred2a_varibench_long.log &
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/varibench_selected_tool_scores.csv varibench short > log/DisorderPredict_iupred2a_varibench_short.log &
+	
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar long > log/DisorderPredict_iupred2a_swissvar_long.log &
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar short > log/DisorderPredict_iupred2a_swissvar_short.log &
+	
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP long > log/DisorderPredict_iupred2a_predictSNP_long.log &
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP short > log/DisorderPredict_iupred2a_predictSNP_short.log &
 
@@ -62,9 +66,13 @@
 
 
 ### 3. DisEmbl
-	​	
-	​	
-	​	
+	​	nohup python DisorderPredict_disembl.py ../data/benchmark/humvar_tool_scores.csv humvar > log/DisorderPredict_disembl_humvar.log &
+	​	nohup python DisorderPredict_disembl.py ../data/benchmark/exovar_tool_scores.csv exovar > log/DisorderPredict_disembl_exovar.log &
+	​	nohup python DisorderPredict_disembl.py ../data/benchmark/varibench_selected_tool_scores.csv varibench > log/DisorderPredict_disembl_varibench.log &
+	​	nohup python DisorderPredict_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar > log/DisorderPredict_disembl_swissvar.log &
+	​	nohup python DisorderPredict_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP > log/DisorderPredict_disembl_predictSNP.log &
+
+	
 
 ## PolyPhen2
 ### 1.Prepare the input files for polyhhen2 prediction
