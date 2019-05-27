@@ -1,15 +1,15 @@
-## Sequence Process
-### 1. Download fasta sequences from NCBI and Uniprot database
+## 1. Sequence Process
+### 1.1 Download fasta sequences from NCBI and Uniprot database
 	​	python DownloadNcbiSeq.py ../data/benchmark/humvar_tool_scores.csv humvar
  	​	python DownloadNcbiSeq.py ../data/benchmark/exovar_tool_scores.csv exovar 
  	​	python DownloadNcbiSeq.py ../data/benchmark/varibench_selected_tool_scores.csv varibench
  	​	python DownloadNcbiSeq.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar
  	​	python DownloadNcbiSeq.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP
-### 2. Extract wild and mutate sequences from downloaded sequences
+### 1.2 Extract wild and mutate sequences from downloaded sequences
 	​	python WildSeq2MutSeq.py 
 
-## Disorder Prediction
-### 1. IUPred2A
+## 2. Disorder Prediction
+### 2.1 IUPred2A
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar long > log/DisorderPredict_iupred2a_humvar_long.log &
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar short > log/DisorderPredict_iupred2a_humvar_short.log &
 	
@@ -25,7 +25,7 @@
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP long > log/DisorderPredict_iupred2a_predictSNP_long.log &
 	​	nohup python DisorderPredict_iupred2a.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP short > log/DisorderPredict_iupred2a_predictSNP_short.log &
 
-### 2. Espritz
+### 2.2 Espritz
 ##### prepare the fasta sequences directory
 	​	cp -r ../data/benchmark/ncbi_seq_wildmut/humvar ../result/espritz_N
 	​	cp -r ../data/benchmark/ncbi_seq_wildmut/exovar ../result/espritz_N
@@ -65,21 +65,21 @@
 	​	nohup python ../../script/DisorderPredict_espritz.py predictSNP D > DisorderPredict_espritz_predictSNP_D.log &
 
 
-### 3. DisEmbl
+### 2.3 DisEmbl
 	​	nohup python DisorderPredict_disembl.py ../data/benchmark/humvar_tool_scores.csv humvar > log/DisorderPredict_disembl_humvar.log &
 	​	nohup python DisorderPredict_disembl.py ../data/benchmark/exovar_tool_scores.csv exovar > log/DisorderPredict_disembl_exovar.log &
 	​	nohup python DisorderPredict_disembl.py ../data/benchmark/varibench_selected_tool_scores.csv varibench > log/DisorderPredict_disembl_varibench.log &
 	​	nohup python DisorderPredict_disembl.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar > log/DisorderPredict_disembl_swissvar.log &
 	​	nohup python DisorderPredict_disembl.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP > log/DisorderPredict_disembl_predictSNP.log &
 
-## Molecular recoginition Region Feature(MoRF)
+## 3.Molecular recoginition Region Feature(MoRF)
 
-## PolyPhen2
-### 1.Prepare the input files for polyhhen2 prediction
+## 4.PolyPhen2
+### 4.1 Prepare the input files for polyhhen2 prediction
 
 	​	python Prepare_pph2.py
 
-### 2. Download polyphen2 predition results
+### 4.2 Download polyphen2 predition results
   ##### HumVar
 	​	wget -b http://genetics.bwh.harvard.edu/ggi/pph2/d07ef4ba93bd556f2b9e9c541a89420e79d8b96b/17/pph2-snps.txt -O humvar.pph2-snps.txt
 	​	wget -b http://genetics.bwh.harvard.edu/ggi/pph2/d07ef4ba93bd556f2b9e9c541a89420e79d8b96b/17/pph2-short.txt -O humvar.pph2-short.txt
@@ -106,14 +106,14 @@
 	​	wget -b http://genetics.bwh.harvard.edu/ggi/pph2/d07ef4ba93bd556f2b9e9c541a89420e79d8b96b/24/pph2-full.txt -O predictSNP.pph2-full.txt
 	​	wget -b http://genetics.bwh.harvard.edu/ggi/pph2/d07ef4ba93bd556f2b9e9c541a89420e79d8b96b/24/pph2-log.txt -O predictSNP.pph2-logs.txt
 
-### 3.Mapping to benchmark dataset
+### 4.3 Mapping to benchmark dataset
 	​	python getPPH2Feature.py
 
 
 
-## Feature Combination
-### 1. Predictted Disorder Score (PDS)
-### 2. Disorder Promotion Feature (DPF)
-### 3. Molecular recoginition Region Feature (MoRF)
-### 4. Derived Predicted Disorder Feature (DPDF)
-### 5. Polyphen2 Consevation Features (PPH2)
+## 5. Feature Combination
+### 5.1 Predictted Disorder Score (PDS)
+### 5.2 Disorder Promotion Feature (DPF)
+### 5.3 Molecular recoginition Region Feature (MoRF)
+### 5.4 Derived Predicted Disorder Feature (DPDF)
+### 5.5 Polyphen2 Consevation Features (PPH2)
