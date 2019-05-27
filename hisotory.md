@@ -190,31 +190,31 @@
 	find ../../data/benchmark/ncbi_seq_wildmut/swissvar/ *.fasta | xargs cat > swissvar_fMoRF.fasta
 	find ../../data/benchmark/ncbi_seq_wildmut/predictSNP/ *.fasta | xargs cat > predictSNP_fMoRF.fasta
 	humvar.split0 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split1 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split2 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split3 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split4 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split5 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split6 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split7 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split8 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split9 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split10 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split11 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split12 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split13 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split14 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split15 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split16 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split17 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split18 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split19 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split20 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split21 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split22 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split23 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split24 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
-	humvar.split25 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527084228/results.html
+	humvar.split1 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527092937/results.html
+	humvar.split2 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527100108/results.html
+	humvar.split3 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527103942/results.html
+	humvar.split4 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split5 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split6 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split7 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split8 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split9 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split10 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split11 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split12 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split13 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split14 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split15 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split16 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split17 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split18 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split19 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split20 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split21 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split22 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split23 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split24 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split25 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
 
 ### 5.4 Derived Predicted Disorder Feature (DPDF)
 ##### IUPred2A
@@ -272,3 +272,22 @@
 ### 5.5 Polyphen2 Consevation Features (PPH2)
 
 ## 6 Feature Evalutation & Comparison
+	​	python EvaluateFeatures.py ../data/benchmark/exovar_tool_scores.csv exovar
+	​	python EvaluateFeatures.py ../data/benchmark/humvar_tool_scores.csv humvar
+	​	python EvaluateFeatures.py ../data/benchmark/varibench_selected_tool_scores.csv varibench
+	​	python EvaluateFeatures.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar
+	​	python EvaluateFeatures.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP
+
+	​	nohup python PredictionComparison.py ../data/benchmark/humvar_tool_scores.csv humvar roc_auc > log/PredictionComparison_humvar.log &
+	​	nohup python PredictionComparison.py ../data/benchmark/exovar_tool_scores.csv exovar roc_auc > log/PredictionComparison_exovar.log &
+	​	nohup python PredictionComparison.py ../data/benchmark/varibench_selected_tool_scores.csv varibench roc_auc > log/PredictionComparison_varibench.log &
+	​	nohup python PredictionComparison.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar roc_auc > log/PredictionComparison_swissvar.log &
+	​	nohup python PredictionComparison.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP roc_auc > log/PredictionComparison_predictSNP.log &
+
+
+	​	python PreDefinedPrediction.py ../data/benchmark/exovar_tool_scores.csv exovar
+	​	python PreDefinedPrediction.py ../data/benchmark/humvar_tool_scores.csv humvar
+	​	python PreDefinedPrediction.py ../data/benchmark/varibench_selected_tool_scores.csv varibench
+	​	python PreDefinedPrediction.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar
+	​	python PreDefinedPrediction.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP
+
