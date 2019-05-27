@@ -113,6 +113,46 @@
 
 ## 5. Feature Combination
 ### 5.1 Predictted Disorder Score (PDS)
+##### IUPred2A
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar long > log/GetFeature_iupred2a_humvar_long.log &
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/humvar_tool_scores.csv humvar short > log/GetFeature_iupred2a_humvar_short.log &
+	
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/exovar_tool_scores.csv exovar long > log/GetFeature_iupred2a_exovar_long.log &
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/exovar_tool_scores.csv exovar short > log/GetFeature_iupred2a_exovar_short.log &
+	
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/varibench_selected_tool_scores.csv varibench long > log/GetFeature_iupred2a_varibench_long.log &
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/varibench_selected_tool_scores.csv varibench short > log/GetFeature_iupred2a_varibench_short.log &
+	
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar long > log/GetFeature_iupred2a_swissvar_long.log &
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar short > log/GetFeature_iupred2a_swissvar_short.log &
+	
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP long > log/GetFeature_iupred2a_predictSNP_long.log &
+	​	nohup python GetFeature_iupred2a.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP short > log/GetFeature_iupred2a_predictSNP_short.log &
+	
+##### Espritz
+	​	nohup python GetFeature_espritz.py ../data/benchmark/humvar_tool_scores.csv humvar X > log/GetFeature_espritz_X_humvar.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/humvar_tool_scores.csv humvar N > log/GetFeature_espritz_N_humvar.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/humvar_tool_scores.csv humvar D > log/GetFeature_espritz_D_humvar.log &
+	
+	​	nohup python GetFeature_espritz.py ../data/benchmark/exovar_tool_scores.csv exovar D > log/GetFeature_espritz_D_exovar.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/exovar_tool_scores.csv exovar N > log/GetFeature_espritz_N_exovar.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/exovar_tool_scores.csv exovar X > log/GetFeature_espritz_X_exovar.log &
+	
+	​	nohup python GetFeature_espritz.py ../data/benchmark/varibench_selected_tool_scores.csv varibench X > log/GetFeature_espritz_X_varibench.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/varibench_selected_tool_scores.csv varibench N > log/GetFeature_espritz_N_varibench.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/varibench_selected_tool_scores.csv varibench D > log/GetFeature_espritz_D_varibench.log &
+	
+	​	nohup python GetFeature_espritz.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar X > log/GetFeature_espritz_X_varibench.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar N > log/GetFeature_espritz_N_varibench.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar D > log/GetFeature_espritz_D_varibench.log &
+	
+	​	nohup python GetFeature_espritz.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP X > log/GetFeature_espritz_X_varibench.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP N > log/GetFeature_espritz_N_varibench.log &
+	​	nohup python GetFeature_espritz.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP D > log/GetFeature_espritz_D_varibench.log &
+
+
+##### DisEmbl
+
 ### 5.2 Disorder Promotion Feature (DPF)
 ### 5.3 Molecular recoginition Region Feature (MoRF)
 ### 5.4 Derived Predicted Disorder Feature (DPDF)
