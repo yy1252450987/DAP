@@ -193,8 +193,8 @@
 	humvar.split1 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527092937/results.html
 	humvar.split2 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527100108/results.html
 	humvar.split3 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527103942/results.html
-	humvar.split4 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
-	humvar.split5 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
+	humvar.split4 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527225032/results.html
+	humvar.split5 http://biomine.cs.vcu.edu/webresults/fMoRFpred/20190527234155/results.html
 	humvar.split6 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
 	humvar.split7 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
 	humvar.split8 http://biomine.cs.vcu.edu/webresults/fMoRFpred//results.html
@@ -293,3 +293,10 @@
 	​	python PreDefinedPrediction.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP
 ### 6.4 Train other datasets and validate on this dataset
 	​	nohup python PredictionComparison_train_others.py > log/PredictionComparison_train_others.log &
+### 6.5 Different Cretiron
+	​	nohup python DifferentCriterion.py ../data/benchmark/humvar_tool_scores.csv humvar > log/DifferentCriterion_humvar.log &
+	​	nohup python DifferentCriterion.py ../data/benchmark/exovar_tool_scores.csv exovar > log/DifferentCriterion_exovar.log &
+	​	nohup python DifferentCriterion.py ../data/benchmark/varibench_selected_tool_scores.csv varibench > log/DifferentCriterion_varibench.log &
+	​	nohup python DifferentCriterion.py ../data/benchmark/swissvar_selected_tool_scores.csv swissvar > log/DifferentCriterion_swissvar.log &
+	​	nohup python DifferentCriterion.py ../data/benchmark/predictSNP_selected_tool_scores.csv predictSNP > log/DifferentCriterion_predictSNP.log &
+
